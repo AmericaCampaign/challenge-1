@@ -1,7 +1,7 @@
 var Shape = function(name, sides, color) {
 
   if (!name || !sides || !color) {
-    return
+    return 
   }
 
   this.name = name;
