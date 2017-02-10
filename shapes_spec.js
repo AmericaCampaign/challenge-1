@@ -2,14 +2,14 @@ var Shape = require('./shapes');
 
 describe("Putting our shape constructor through the ringer", function(){
 
-  it('the shape constructor exists', function(){
-    var square = new Shape('square', 4, 'blue');
-    expect(square).toBeDefined();
+  it('the shape can tell us its name', function(){
+    var s1 = new Shape('square');
+    expect(square.name).toBeDefined('square');
   });
 
-  xit('A triangle can tell us its name!', function(){
-    var tri = new Shape('triangle', 3, 'red');
-    expect(tri.name).toEqual("triangle");
+  xit('A triangle can tell us its sides!', function(){
+    var tri = new Shape('triangle', 3);
+    expect(tri.sides).toEqual(3);
   })
 
   xit('A triangle can tell us about its self!', function(){
